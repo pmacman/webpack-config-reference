@@ -1,0 +1,37 @@
+{
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development --watch",
+    "clean": "rimraf dist",
+    "lint": "eslint src/js",
+    "stats": "webpack --profile --json > dist/stats.json; webpack-bundle-analyzer dist/stats.json"
+  },
+  "dependencies": {
+    "flatpickr": "^4.6.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^9.0.1",
+    "core-js": "^3.18.0",
+    "css-loader": "^6.3.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "mini-css-extract-plugin": "^2.3.0",
+    "node-sass": "^6.0.1",
+    "regenerator-runtime": "^0.13.9",
+    "remove-files-webpack-plugin": "^1.4.5",
+    "rimraf": "^3.0.2",
+    "sass-loader": "^12.1.0",
+    "script-loader": "^0.7.2",
+    "webpack": "^5.53.0",
+    "webpack-bundle-analyzer": "^4.4.2",
+    "webpack-cli": "^4.8.0"
+  }
+}
